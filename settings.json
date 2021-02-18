@@ -1,0 +1,15 @@
+{
+    "title": "CastHub Documentation",
+    "url": "https://docs.casthub.app",
+    "logo": {
+        "light": "/logo-light.png",
+        "dark": "/logo-dark.png"
+    },
+    "twitter": "casthubapp",
+    "algolia": {
+        "appId": "BH4D9OD16A",
+        "apiKey": "cdf5e3cfc8ddd8b8d820f1a0f58a7b71",
+        "indexName": "casthub",
+        "langAttribute": "language"
+    }
+}
