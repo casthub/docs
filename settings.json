@@ -10,7 +10,6 @@
     "defaultBranch": "master",
     "algolia": {
         "apiKey": "cdf5e3cfc8ddd8b8d820f1a0f58a7b71",
-        "indexName": "casthub",
-        "langAttribute": "language"
+        "indexName": "casthub"
     }
 }
