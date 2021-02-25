@@ -13,7 +13,7 @@ The property specification is defined in your code, and the function itself is a
 
 By specifying the method `prepareProps` in your code, you can return a specification that will be used to render the Properties Form to the end-user.
 
-This method is asynchronous, and there is _currently_ no timeout on the length of time this method can take to execute. For example:
+This method is asynchronous, and there is currently no timeout on the length of time this method can take to execute. For example:
 
 <code-group>
 <code-block label="TypeScript" active>
@@ -21,16 +21,20 @@ This method is asynchronous, and there is _currently_ no timeout on the length o
 ```typescript
 import { PropList, PropType } from '@casthub/types';
 
-async prepareProps(): Promise<PropList> {
-    return {
-        hello: {
-            type: PropType.Text,
-            required: true,
-            default: 'test',
-            label: 'Hello World',
-            help: 'Enter any text',
-        },
-    };
+export default class extends window.casthub.module<{
+    hello: string;
+}> {
+    async prepareProps(): Promise<PropList> {
+        return {
+            hello: {
+                type: PropType.Text,
+                required: true,
+                default: 'test',
+                label: 'Hello World',
+                help: 'Enter any text',
+            },
+        };
+    }
 }
 ```
 
@@ -38,21 +42,27 @@ async prepareProps(): Promise<PropList> {
 <code-block label="JavaScript">
 
 ```js
-async prepareProps() {
-    return {
-        hello: {
-            type: 'text',
-            required: true,
-            default: 'test',
-            label: 'Hello World',
-            help: 'Enter any text',
-        },
-    };
+module.exports = class extends window.casthub.module {
+    async prepareProps() {
+        return {
+            hello: {
+                type: 'text',
+                required: true,
+                default: 'test',
+                label: 'Hello World',
+                help: 'Enter any text',
+            },
+        };
+    }
 }
 ```
 
 </code-block>
 </code-group>
+
+<alert>
+For TypeScript users, be sure to provide typings for your properties when writing the class - see above for an example
+</alert>
 
 ## Reacting to Changes
 
