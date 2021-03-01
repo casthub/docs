@@ -164,6 +164,81 @@ module.exports = class extends window.casthub.card.action {
 
 Given the wide range of integrated services in the CastHub Ecosystem, you can achieve a lot of interesting and complex operations with Actions. You can read about usage further in the [Actions](/automation-cards/actions) documentation.
 
+## Name
+
+Automation Cards, no matter the type, have the ability to manage their name in the CastHub UI. This can be a powerful way to show what the Card is  actually doing, and can incorporate any number of data sources, since you do it from your code.
+
+For example, if we wanted to change the name of the Card to reflect a Property:
+
+<code-group>
+<code-block label="TypeScript" active>
+
+```typescript
+import { PropList, PropType } from '@casthub/types';
+
+export default class extends window.casthub.card.action<{
+    hello: string;
+}> {
+    async mounted(): Promise<void> {
+        await super.mounted();
+
+        this.name = `Hello world! ${this.props.hello}`;
+    }
+
+    onPropChange(key: string, value: any): void {
+        this.name = `And again! ${value}`;
+    }
+
+    async prepareProps(): Promise<PropList> {
+        return {
+            hello: {
+                type: PropType.Text,
+                required: true,
+                default: 'test',
+                label: 'Hello World',
+                help: 'Enter any text',
+            },
+        };
+    }
+}
+```
+
+</code-block>
+<code-block label="JavaScript">
+
+```js
+module.exports = class extends window.casthub.card.action {
+    mounted() {
+        await super.mounted();
+
+        this.name = `Hello world! ${this.props.test}`;
+    }
+
+    onPropChange(key, value) {
+        this.name = `And again! ${value}`;
+    }
+
+    async prepareProps() {
+        return {
+            hello: {
+                type: 'text',
+                required: true,
+                default: 'test',
+                label: 'Hello World',
+                help: 'Enter any text',
+            },
+        };
+    }
+};
+```
+
+</code-block>
+</code-group>
+
+<alert>
+Users are able to customize the name of the Card. If they do this, name changes will no longer be reflected.
+</alert>
+
 ## Development
 
 Unpublished Cards will not appear inside the CastHub Store and, as such, you cannot add them to your Automations in the conventional way.
