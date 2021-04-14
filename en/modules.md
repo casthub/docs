@@ -21,9 +21,9 @@ Users download and install Modules via the Module Store. Unlike conventional App
 
 ## Creating a Module
 
-Modules are created and managed within the CastHub App itself, so if you haven't already, [download the app](https://casthub.app/download).
+Modules are created and managed within the CastHub App itself, so if you haven't already, [download the app](/download).
 
-Once downloaded, installed and signed-in, you're ready to create your Module. Go to "Account Settings" via the @icon-settings icon and enable **Developer Tools**. You'll now have access to the Developer section of the App via the @icon-code icon!
+Once downloaded, installed and signed-in, you're ready to create your Module. Go to "Account Settings" via the <app-icon type="settings"></app-icon> icon and enable **Developer Tools**. You'll now have access to the Developer section of the App via the <app-icon type="code"></app-icon> icon!
 
 ### Filling out the Form
 
@@ -42,15 +42,15 @@ Once you successfully create a Module, you'll find a new folder in your local Ap
 - **Windows** - `C:\Users\{user}\AppData\Roaming\CastHub\modules`
 - **Linux** - `~/.config/CastHub/modules`
 
-Or by clicking the @icon-folder Button when viewing the Module page.
+Or by clicking the <app-icon type="folder"></app-icon> Button when viewing the Module page.
 
 The folder generated for your Module will be the same as your `key`.
 
 ### index.js
 
-All Modules have a single export point, and in this scaffold it is `index.js`. The name of the file isn't important, as long as the `main` in your `package.json` points to it (See [Metadata](/modules/metadata) for more on this)
+All Modules have a single export point, and in this scaffold it is `index.js`. The name of the file isn't important, as long as the `main` in your `package.json` points to it (See <docs-link path="/modules/metadata">Metadata</docs-link> for more on this)
 
-The returned class in your `index.js` **must** be a subclass of `window.casthub.module`. The [Stock Elements](/modules/stock-elements) all inherit from this base class, so you are also able to extend them directly instead.
+The returned class in your `index.js` **must** be a subclass of `window.casthub.module`. The <docs-link path="/modules/stock-elements">Stock Elements</docs-link> all inherit from this base class, so you are also able to extend them directly instead.
 
 ## Using Unpublished Modules
 
@@ -67,13 +67,13 @@ And there you go, your unpublished Module is now on your Dashboard ready to deve
 
 ## Structure
 
-Modules are single <a href="https://developer.mozilla.org/en-US/Web/Web_Components" target="_blank" rel="noopener noreferrer">Web Component</a> that must always extend the `window.casthub.module` Component, or a [subset of it](/modules/stock-elements).
+Modules are single <a href="https://developer.mozilla.org/en-US/Web/Web_Components" target="_blank" rel="noopener noreferrer">Web Component</a> that must always extend the `window.casthub.module` Component, or a <docs-link path="/modules/stock-elements">subset of it</docs-link>.
 
 With this comes some useful methods to help in working with the Shadow DOM and other aspects of Module Development.
 
 ### HTML
 
-Modules can supply a Template HTML File that will be injected and available to the Module at run-time. You can [read the Documentation here](/modules/html).
+Modules can supply a Template HTML File that will be injected and available to the Module at run-time. You can <docs-link path="/modules/html">read the Documentation here</docs-link>.
 
 Otherwise, you are free to add and remove Elements from the top-level container as you see fit, for example:
 
@@ -122,13 +122,13 @@ Some useful references you have access to are:
 
 ### CSS
 
-There are many ways of customizing your Module's CSS - they are all covered in our [CSS Documentation](/modules/css).
+There are many ways of customizing your Module's CSS - they are all covered in our <docs-link path="/modules/css">CSS Documentation</docs-link>.
 
 ## Flow and Debugging
 
 Modules are actually individual processes, allowing among other things for them to have their own individual Devtools.
 
-If you have Developer Tools enabled, each Module will have an `Inspect` option when you click the @icon-settings icon on the Module.
+If you have Developer Tools enabled, each Module will have an `Inspect` option when you click the <app-icon type="settings"></app-icon> icon on the Module.
 
 ### Refreshing Modules
 

@@ -9,7 +9,7 @@ Actions are the work-house of an Automation. They execute the resulting business
 
 ## Booting
 
-Much like [Actions](/automation-cards/actions), they are able to asynchronously boot before being ready to execute.
+Much like <docs-link path="/automation-cards/actions">Actions</docs-link>, they are able to asynchronously boot before being ready to execute.
 
 <code-group>
 <code-block label="TypeScript" active>
@@ -44,7 +44,7 @@ module.exports = class extends window.casthub.card.action {
 
 When a Trigger is executed in an Automation and all Conditions pass, Actions will be executed together (Or asynchronously if the User enables Sequential Actions). A function inside the Action will be called to execute the logic, `run`. It accepts a single parameter, `input`, which is the data output from the Trigger that executed the Automation.
 
-Each Trigger can define it's own [I/O schema](/automation-cards/io), as such, it's better to test or hard-encode certain services/systems your Action works with if you rely on the given `input`.
+Each Trigger can define it's own <docs-link path="/automation-cards/io">I/O schema</docs-link>, as such, it's better to test or hard-encode certain services/systems your Action works with if you rely on the given `input`.
 
 ```js
 

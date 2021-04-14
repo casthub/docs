@@ -18,7 +18,7 @@ The CastHub CLI supports all content types offered by CastHub - since all of the
 
 ## Uploading Code
 
-Using the CastHub CLI, you can upload and/or publish your content via your Terminal or [CI/CD](/cli/ci). Make sure you have [installed and set-up the CLI](/cli)!
+Using the CastHub CLI, you can upload and/or publish your content via your Terminal or <docs-link path="/cli/ci">CI/CD</docs-link>. Make sure you have <docs-link path="/cli">installed and set-up the CLI</docs-link>!
 
 In the directory of your content, you can call the `upload` command of the relevant topic to upload it to the CastHub CDN:
 
@@ -32,7 +32,7 @@ There are various flags available to the `upload` command - all of which you can
 
 ### Automatic Publishing
 
-The `-p/--publish` flag will automatically publish the given Version when added. This is useful for [CI/CD](/cli/ci) environments where it is not possible to launch the App to manually publish versions after upload.
+The `-p/--publish` flag will automatically publish the given Version when added. This is useful for <docs-link path="/cli/ci">CI/CD</docs-link> environments where it is not possible to launch the App to manually publish versions after upload.
 
 ## Initial Version
 

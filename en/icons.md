@@ -5,7 +5,7 @@ position: 20
 category: Resources
 ---
 
-The CastHub Icon font is available via the [Icon Component](/modules/components#icon). You can use the list below to find an icon to use.
+The CastHub Icon font is available via the <docs-link path="/modules/components#icon">Icon Component</docs-link>. You can use the list below to find an icon to use.
 
 <icon-explorer></icon-explorer>
 

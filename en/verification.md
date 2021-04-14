@@ -3,10 +3,6 @@ title: Verification
 description: Some Modules and Automation Cards on CastHub display a verified tick next to their names
 position: 26
 category: Misc.
-items:
-  - A Verified badge next to the Store entry
-  - Regular featured slots in the CastHub Store
-  - Exclusive Discord Channel for direct support from the CastHub Development Team
 ---
 
 Some Modules and Automation Cards on CastHub display a verified tick next to their names to indicate that the content is verified and from a trusted source.
@@ -17,7 +13,9 @@ Generally this is content that is maintained by companies/well-known individuals
 
 Verified content is treated differently to the content provided by users - for example, the following benefits are applied:
 
-<list :items="items"></list>
+- A Verified badge next to the Store entry
+- Regular featured slots in the CastHub Store
+- Exclusive Discord Channel for direct support from the CastHub Development Team
 
 ## Requesting Verification
 

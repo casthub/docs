@@ -13,7 +13,7 @@ CastHub Automations are built around individual Cards, each being 1 of 3 types; 
 
 ### Triggers
 
-Trigger Cards are the start of the workflow - using the [vast range of available Integrations](/third-party), or even custom logic, these Cards will trigger a run of the entire Automation lifecycle.
+Trigger Cards are the start of the workflow - using the <docs-link path="/third-party">vast range of available Integrations</docs-link>, or even custom logic, these Cards will trigger a run of the entire Automation lifecycle.
 
 ### Conditions
 
@@ -21,11 +21,11 @@ Once a Trigger Card has started the Automation lifecycle, Condition Cards are ex
 
 ### Actions
 
-Once triggered, and given all Conditions have passed, Action Cards are executed. These Cards perform certain actions - such as posting a Tweet - and receive any [input](/automation-cards/io) from the Trigger Card that initiated the Automation.
+Once triggered, and given all Conditions have passed, Action Cards are executed. These Cards perform certain actions - such as posting a Tweet - and receive any <docs-link path="/automation-cards/io">input</docs-link> from the Trigger Card that initiated the Automation.
 
 ## Creating a Card
 
-Ensure you have [enabled Developer Tools](/#enabling-developer-features) and then head to the Developers section of the App. In here, there is an `Automation Cards` tab where you can create a new Card.
+Ensure you have enabled Developer Tools and then head to the Developers section of the App. In here, there is an `Automation Cards` tab where you can create a new Card.
 
 - **Card Type** - As discussed above, there are 3 types of Automation Cards. You must pick **one** for your Card.
 - **Card Key** - Think of this like your Element tag. For example, `hello-world`. This is unique for all Cards and cannot be changed after creation.
@@ -90,7 +90,7 @@ module.exports = class extends window.casthub.card.trigger {
 </code-block>
 </code-group>
 
-This is a very basic example of how Triggers function - more information, including I/O to other Cards, is covered in the [Triggers](/automation-cards/triggers) documentation.
+This is a very basic example of how Triggers function - more information, including I/O to other Cards, is covered in the <docs-link path="/automation-cards/triggers">Triggers</docs-link> documentation.
 
 ### Conditions
 
@@ -129,7 +129,7 @@ module.exports = class extends window.casthub.card.condition {
 </code-block>
 </code-group>
 
-There isn't a whole lot that goes in to Conditions - but you can read further on how to report failures and prevent an Automation from proceeding in the [Conditions](/automation-cards/conditions) documentation.
+There isn't a whole lot that goes in to Conditions - but you can read further on how to report failures and prevent an Automation from proceeding in the <docs-link path="/automation-cards/conditions">Conditions</docs-link> documentation.
 
 ### Actions
 
@@ -162,7 +162,7 @@ module.exports = class extends window.casthub.card.action {
 </code-block>
 </code-group>
 
-Given the wide range of integrated services in the CastHub Ecosystem, you can achieve a lot of interesting and complex operations with Actions. You can read about usage further in the [Actions](/automation-cards/actions) documentation.
+Given the wide range of integrated services in the CastHub Ecosystem, you can achieve a lot of interesting and complex operations with Actions. You can read about usage further in the <docs-link path="/automation-cards/actions">Actions</docs-link> documentation.
 
 ## Name
 
@@ -235,9 +235,7 @@ module.exports = class extends window.casthub.card.action {
 </code-block>
 </code-group>
 
-<alert>
 Users are able to customize the name of the Card. If they do this, name changes will no longer be reflected.
-</alert>
 
 ## Development
 

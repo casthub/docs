@@ -5,7 +5,7 @@ position: 2
 category: CLI
 ---
 
-To use the various ecosystems CastHub provides to Developers, we offer an official CLI tool that can use [used in a CI/CD environment](/cli/ci), or locally for ease-of-use.
+To use the various ecosystems CastHub provides to Developers, we offer an official CLI tool that can use <docs-link path="/cli/ci">used in a CI/CD environment</docs-link>, or locally for ease-of-use.
 
 ## Installation
 
@@ -37,7 +37,7 @@ If you install globally, ensure you have the NPM/Yarn `bin` in your `$PATH` if y
 
 Most CLI commands require authentication to work, such as uploading assets and creating new content versions. This is done using a **Personal Access Token**. These are authentication tokens that _don't expire_, and grant complete access to your published content. As such, you should protect them like you would a password, and never store them in repositories.
 
-To generate a Personal Access Token, you'll need to [download and install](https://casthub.app/download) the CastHub App, [activate Developer Tools](/#enabling-developer-features) and navigate to the Developers section. From here, there is a `Personal Access Tokens` tab.
+To generate a Personal Access Token, you'll need to [download and install](/download) the CastHub App, activate Developer Tools and navigate to the Developers section. From here, there is a `Personal Access Tokens` tab.
 
 When creating a Personal Access Token, you'll be given a list of available scopes. For the purposes of the CLI (Whether for use on your own machine or in CI/CD), you should **only** select the `cli` scope. This scope will grant the token access to only the areas of your Account that are needed by the CLI tool.
 

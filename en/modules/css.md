@@ -9,7 +9,7 @@ There are a few different methods of supplying CSS to your Module. You are free 
 
 ## Template File
 
-Modules can supply a Template HTML File which can include CSS inside of it. This is the easiest way to include and manage CSS in a Module. You can [read the Documentation here](/modules/html).
+Modules can supply a Template HTML File which can include CSS inside of it. This is the easiest way to include and manage CSS in a Module. You can <docs-link path="/modules/html">read the Documentation here</docs-link>.
 
 ## Embedded in JavaScript
 
@@ -54,4 +54,4 @@ module.exports = class extends window.casthub.module {
 
 ## Building & Pre-processors
 
-A combination of a build process and the previous in-module CSS, you can use a build process like Rollup to export a Module that pre-imports the required CSS/SCSS/LESS file. For more information, check out our [Boilerplate Documentation](/modules#advanced-boilerplate).
+A combination of a build process and the previous in-module CSS, you can use a build process like Rollup to export a Module that pre-imports the required CSS/SCSS/LESS file. For more information, check out our <docs-link path="/modules#advanced-boilerplate">Boilerplate Documentation</docs-link>.

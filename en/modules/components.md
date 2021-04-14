@@ -13,15 +13,15 @@ Whilst these Components are _technically_ Web Components, we still recommend usi
 
 **Properties**
 
-| Name            | Type    | Default     | Values                                          |
-|-----------------|---------|-------------|-------------------------------------------------|
-| `color`         | String  | `'primary'` | `['primary', 'secondary', 'success', 'danger']` |
-| `icon`          | String  | `''`        | [Icon Explorer](/icons)                         |
-| `icon-position` | String  | `'left'`    | `['left', 'right']`                             |
-| `flat`          | Boolean | `false`     |                                                 |
-| `floating`      | Boolean | `false`     |                                                 |
-| `small`         | Boolean | `false`     |                                                 |
-| `disabled`      | Boolean | `false`     |                                                 |
+| Name            | Type    | Default     | Values                                             |
+|-----------------|---------|-------------|----------------------------------------------------|
+| `color`         | String  | `'primary'` | `['primary', 'secondary', 'success', 'danger']`    |
+| `icon`          | String  | `''`        | <docs-link path="/icons">Icon Explorer</docs-link> |
+| `icon-position` | String  | `'left'`    | `['left', 'right']`                                |
+| `flat`          | Boolean | `false`     |                                                    |
+| `floating`      | Boolean | `false`     |                                                    |
+| `small`         | Boolean | `false`     |                                                    |
+| `disabled`      | Boolean | `false`     |                                                    |
 
 **Events**
 
@@ -81,12 +81,12 @@ The Empty Component is a simple empty indicator that can be used via the `empty`
 
 **Properties**
 
-| Name      | Type    | Default                    | Values                  |
-|-----------|---------|----------------------------|-------------------------|
-| `icon`    | String  | `''`                       | [Icon Explorer](/icons) |
-| `text`    | String  | `'There\'s nothing here!'` |                         |
-| `overlay` | Boolean | `false`                    |                         |
-| `visible` | Boolean | `true`                     |                         |
+| Name      | Type    | Default                    | Values                                             |
+|-----------|---------|----------------------------|----------------------------------------------------|
+| `icon`    | String  | `''`                       | <docs-link path="/icons">Icon Explorer</docs-link> |
+| `text`    | String  | `'There\'s nothing here!'` |                                                    |
+| `overlay` | Boolean | `false`                    |                                                    |
+| `visible` | Boolean | `true`                     |                                                    |
 
 **Examples**
 
@@ -106,10 +106,10 @@ The Header Component is a stylized, pre-made Module Header that can be used via 
 
 **Properties**
 
-| Name    | Type   | Default     | Values                  |
-|---------|--------|-------------|-------------------------|
-| `icon`  | String | `''`        | [Icon Explorer](/icons) |
-| `color` | String | `'#000000'` |                         |
+| Name    | Type   | Default     | Values                                             |
+|---------|--------|-------------|----------------------------------------------------|
+| `icon`  | String | `''`        | <docs-link path="/icons">Icon Explorer</docs-link> |
+| `color` | String | `'#000000'` |                                                    |
 
 **Examples**
 
@@ -129,7 +129,7 @@ $header.innerText = 'Latest Subscribers';
 
 ## `icon`
 
-The Icon Component renders a simple, inline Icon. You can choose from any of the [available Icons](/icons).
+The Icon Component renders a simple, inline Icon. You can choose from any of the <docs-link path="/icons">available icons</docs-link>.
 
 **Examples**
 

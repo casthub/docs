@@ -9,7 +9,7 @@ Whilst simple, Conditions play a large role in the execution and lifecycle of an
 
 ## Booting
 
-Much like [Actions](/automation-cards/actions), they are able to asynchronously boot before being ready to execute.
+Much like <docs-link path="/automation-cards/actions">Actions</docs-link>, they are able to asynchronously boot before being ready to execute.
 
 <code-group>
 <code-block label="TypeScript" active>
@@ -44,7 +44,7 @@ module.exports = class extends window.casthub.card.trigger {
 
 When a Trigger is executed, all Conditions will be executed together. In order for the Automation to continue to Actions, all of the Conditions must pass, i.e. not throw any uncaught errors. A function inside the Condition will be called to make this check, `run`. It accepts a single parameter, `input`, which is the data output from the Trigger that executed the Automation.
 
-Each Trigger can define it's own [I/O Schema](/automation-cards/io), as such, it's better to test or hard-encode certain services/systems your Condition works with if you rely on the given `input`.
+Each Trigger can define it's own <docs-link path="/automation-cards/io">I/O Schema</docs-link>, as such, it's better to test or hard-encode certain services/systems your Condition works with if you rely on the given `input`.
 
 <code-group>
 <code-block label="TypeScript" active>

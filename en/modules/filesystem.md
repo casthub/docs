@@ -15,7 +15,7 @@ You are limited to the following extensions/data types:
 
 ## File Specification
 
-Usage of the Filesystem API is gated by a register of files you wish to use, meaning you cannot create/delete/update files you do not own. To achieve this, you can use the [metadata](/modules/metadata) specification to define which files you'd like to use inside your `package.json`. For example:
+Usage of the Filesystem API is gated by a register of files you wish to use, meaning you cannot create/delete/update files you do not own. To achieve this, you can use the <docs-link path="/modules/metadata">metadata</docs-link> specification to define which files you'd like to use inside your `package.json`. For example:
 
 ```json
 {
@@ -36,7 +36,7 @@ Usage of the Filesystem API is gated by a register of files you wish to use, mea
 
 CastHub will ensure that the correct folder exists for your Module and that the specified files exist before the Module is loaded.
 
-<alert>Since providing default content for files is not allowed, any `json` files will default to an empty object, allowing the retrieval of the file without error.</alert>
+Since providing default content for files is not allowed, any `json` files will default to an empty object, allowing the retrieval of the file without error.
 
 ## Locating Files
 
@@ -48,7 +48,7 @@ Otherwise, the structure for files is as follows:
 %CASTHUB%/module_files/{key}/{module_id}
 ```
 
-- `%CASTHUB%` - The [appdata location](/modules#template-scaffolding) for CastHub
+- `%CASTHUB%` - The <docs-link path="/modules#template-scaffolding">appdata location</docs-link> for CastHub
 - `{key}` - The key of the Module, e.g. `twitch-user`
 - `{module_id}` - The UUID for this instance of the Module
 
@@ -56,7 +56,7 @@ Otherwise, the structure for files is as follows:
 
 We offer a simple API for storing data in given Files.
 
-<alert>You do not specify files by their path, but instead **by the key** you assign in your `package.json`</alert>
+You do not specify files by their path, but instead **by the key** you assign in your `package.json`.
 
 For example, using the Filesystem specification above, we can do the following:
 

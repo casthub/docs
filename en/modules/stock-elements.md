@@ -246,7 +246,7 @@ sort(items) {
 
 ### Modifying the Header
 
-The List Stock Element comes with a [Header Component](/modules/components#header) and provides short and easy setters for modifying it. For example:
+The List Stock Element comes with a <docs-link path="/modules/components#header">Header Component</docs-link> and provides short and easy setters for modifying it. For example:
 
 ```js
 constructor() {
@@ -389,7 +389,7 @@ Using the `live` property within the Module, you can easily toggle the live stat
 
 Currently the Stock Element is limited in customizability to the following properties:
 
-- `icon` - The Icon places in the top-left of the Module. A list of supported Icons can be found [here](/icons).
+- `icon` - The Icon places in the top-left of the Module. A list of supported Icons can be found <docs-link path="/icons">here</docs-link>.
 
 These properties **are reactive** and can be updated at any point during the module lifecycle.
 
@@ -442,4 +442,4 @@ The following properties can be set to further customize the Stock Element:
 
 - `avatar` - Sets the Avatar Image to the given URL.
 - `color` - Sets the color of the header block.
-- `icon` - Sets an Icon shown to the left of the header block, see a list of available Icons [here](/icons).
+- `icon` - Sets an Icon shown to the left of the header block, see a list of available Icons <docs-link path="/icons">here</docs-link>.

@@ -44,7 +44,7 @@ module.exports = class extends window.casthub.card.trigger {
 
 When a Trigger decides an Automation should run, for example if a new Twitch Subscriber event has come in, it should call the `trigger` function to inform the App that it should begin executing the Automation.
 
-Triggers can also pass an output object down to the Conditions and Actions that will be executed. This is the I/O Object, and has a specific [Schema](/automation-cards/io) that must be followed.
+Triggers can also pass an output object down to the Conditions and Actions that will be executed. This is the I/O Object, and has a specific <docs-link path="/automation-cards/io">Schema</docs-link> that must be followed.
 
 <code-group>
 <code-block label="TypeScript" active>

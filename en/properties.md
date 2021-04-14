@@ -60,9 +60,7 @@ module.exports = class extends window.casthub.module {
 </code-block>
 </code-group>
 
-<alert>
 For TypeScript users, be sure to provide typings for your properties when writing the class - see above for an example
-</alert>
 
 ## Reacting to Changes
 
