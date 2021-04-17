@@ -5,7 +5,7 @@ position: 19
 category: Automation Cards
 ---
 
-When a <docs-link path="/automation-cards/trigger">Trigger</docs-link> is executed, it can optionally define an object to pass to future <docs-link path="/automation-cards/conditions">Conditions</docs-link> and <docs-link path="/automation-cards/actions">Actions</docs-link>. This is the I/O Object, and it has a loosely defined schema that is enforced by the App, but otherwise is open to any input.
+When a <docs-link path="/automation-cards/triggers">Trigger</docs-link> is executed, it can optionally define an object to pass to future <docs-link path="/automation-cards/conditions">Conditions</docs-link> and <docs-link path="/automation-cards/actions">Actions</docs-link>. This is the I/O Object, and it has a loosely defined schema that is enforced by the App, but otherwise is open to any input.
 
 The given schema by default, subject to change, is as follows:
 
