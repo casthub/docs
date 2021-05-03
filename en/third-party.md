@@ -7,6 +7,20 @@ category: Resources
 
 One of the many benefits from the CastHub Ecosystem is access to a diverse range of third-party integrations. Currently these come in the forms of unified API interfaces, WebSocket management and access to local applications.
 
+## Discord
+
+We support the latest available Discord HTTP API through CastHub. **Currently this is `v9`**. For example:
+
+```js
+const response = await window.casthub.fetch({
+    integration: 'discord',
+    method: 'GET',
+    url: 'users/@me/guilds',
+});
+```
+
+All requests are authenticated under the User, we do not currently support using a Bot account.
+
 ## Elgato Control Center
 
 CastHub makes controlling Elgato Control Center easy by communicating on your behalf. For example:
