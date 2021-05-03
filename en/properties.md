@@ -62,7 +62,69 @@ module.exports = class extends window.casthub.module {
 
 For TypeScript users, be sure to provide typings for your properties when writing the class - see above for an example
 
-## Reacting to Changes
+## Reacting to staged changes
+
+When the User is changing properties in the UI, sometimes you may wish to recalculate the shown Properties based on user input. For example, you could disable a field and wait for another field to be selected first. This is called reacting to **staged changes**, changes which are happening but the user hasn't yet committed to (I.e. hasn't clicked save).
+
+Because of this, it's important to not let these changes affect your code - a best practice would be to keep `prepareProps` stateless.
+
+You can enable this functionality on a per-field basis, since every time that field is changed, the User will be prevented from editing further properties until the `prepareProps` call is executed.
+
+<code-group>
+<code-block label="TypeScript" active>
+
+```typescript
+import { PropList, PropType } from '@casthub/types';
+
+export default class extends window.casthub.module<{
+    select1: string;
+    select2: string;
+}> {
+    async prepareProps(stage): Promise<PropList> {
+        return {
+            select1: {
+                type: PropType.Select,
+                required: true,
+                label: 'Test 1',
+                watch: true,
+                options: {
+                    option1: {
+                        text: 'Option 1',
+                    },
+                    option2: {
+                        text: 'Option 2',
+                    },
+                },
+            },
+            select2: {
+                type: PropType.Select,
+                label: 'Test 2',
+                disabled: stage.select1 === undefined,
+                options: {
+                    anotherOption1: {
+                        text: 'Another option 1',
+                    },
+                    anotherOption2: {
+                        text: 'Another option 2',
+                    },
+                },
+            },
+        };
+    }
+}
+```
+
+</code-block>
+<code-block label="JavaScript">
+
+```js
+
+```
+
+</code-block>
+</code-group>
+
+## Reacting to Saved Properties
 
 When a User modifies a property, we provide a way for you to react to this change in real-time through another method, `onPropChange`. This method is also called for every property on initial load.
 
