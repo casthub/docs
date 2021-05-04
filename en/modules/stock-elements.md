@@ -48,7 +48,7 @@ this.remove('some-unique-id');
 
 You can use this Stock Element by extending the exported global: `window.casthub.elements.counter`
 
-The Counter Stock Element renders a single Counter that comes with a background Chart to represent change in the count value over time. You can see it in-use in any of our <a href="https://github.com/casthub/module-twitch-viewers" target="_blank" rel="noopener noreferrer">Viewer Count Modules</a>.
+The Counter Stock Element renders a single Counter that comes with a background Chart to represent change in the count value over time. You can see it in-use in any of our <a href="https://github.com/casthub/content/tree/master/module-twitch-viewers" target="_blank" rel="noopener noreferrer">Viewer Count Modules</a>.
 
 ### Setting the Count value
 
@@ -121,7 +121,7 @@ constructor() {
 
 You can use this Stock Element by extending the exported global: `window.casthub.elements.feed`
 
-The Feed Stock Element renders a scrollable live-feed for easy consumption of time-based events. For example, we use the Feed Stock Element in the various Service Feeds, such as the <a href="https://github.com/casthub/module-twitch-feed" target="_blank" rel="noopener noreferrer">Twitch Feed Module</a>.
+The Feed Stock Element renders a scrollable live-feed for easy consumption of time-based events. For example, we use the Feed Stock Element in the various Service Feeds, such as the <a href="https://github.com/casthub/content/tree/master/module-twitch-feed" target="_blank" rel="noopener noreferrer">Twitch Feed Module</a>.
 
 ### Adding or Removing Items
 
@@ -157,7 +157,7 @@ When adding an Item object, it must follow a given definition.
 
 You can use this Stock Element by extending the exported global: `window.casthub.elements.list`
 
-The List Stock Element is a great base element for any, well, lists. For example, we use the List Stock Element in the various Donation Modules, such as the <a href="https://github.com/casthub/module-tipeeestream-donations" target="_blank" rel="noopener noreferrer">Tipeeestream Donations Module</a>.
+The List Stock Element is a great base element for any, well, lists. For example, we use the List Stock Element in the various Donation Modules, such as the <a href="https://github.com/casthub/content/tree/master/module-tipeeestream-donations" target="_blank" rel="noopener noreferrer">Tipeeestream Donations Module</a>.
 
 ### Adding or Removing Items
 
@@ -271,7 +271,7 @@ The Media Player Element, by default, gives you the following scaffolding:
 
 ### Control Methods
 
-In order to make the media controls work, you must implement functions for each, all of them returning a `Promise`. For example, this is from the <a href="https://github.com/casthub/module-spotify-player" target="_blank" rel="noopener noreferrer">Spotify Player</a> Module:
+In order to make the media controls work, you must implement functions for each, all of them returning a `Promise`. For example, this is from the <a href="https://github.com/casthub/content/tree/master/module-spotify-player" target="_blank" rel="noopener noreferrer">Spotify Player</a> Module:
 
 ```js
 /**
@@ -318,7 +318,7 @@ This can be achieved by called `this.setDisabled(true);`, and using `false` to r
 
 You can use this Stock Element by extending the exported global: `window.casthub.elements.scenes`
 
-The Scenes Element displays a grid of Scenes that can be switched to/from. It is used in a few of our Modules, including the <a href="https://github.com/casthub/module-obs-scenes" target="_blank" rel="noopener noreferrer">OBS Scenes</a> Module.
+The Scenes Element displays a grid of Scenes that can be switched to/from. It is used in a few of our Modules, including the <a href="https://github.com/casthub/content/tree/master/module-obs-scenes" target="_blank" rel="noopener noreferrer">OBS Scenes</a> Module.
 
 ### Setting and Adding Scenes
 
@@ -379,7 +379,7 @@ this.setActive('scene-id');
 
 You can use this Stock Element by extending the exported global: `window.casthub.elements.stream_status`
 
-The Stream Status Element can display a simple OFFLINE/LIVE indicator with a bit of customizability. It is used in a few of our Modules, including the <a href="https://github.com/casthub/module-twitch-stream-status" target="_blank" rel="noopener noreferrer">Twitch Stream Status</a> Module.
+The Stream Status Element can display a simple OFFLINE/LIVE indicator with a bit of customizability. It is used in a few of our Modules, including the <a href="https://github.com/casthub/content/tree/master/module-twitch-stream-status" target="_blank" rel="noopener noreferrer">Twitch Stream Status</a> Module.
 
 ### Toggling the Live Status
 
@@ -397,7 +397,7 @@ These properties **are reactive** and can be updated at any point during the mod
 
 You can use this Stock Element by extending the exported global: `window.casthub.elements.user`
 
-The User Info Stock Element provides a base for presenting labeled information to the User, such as Stream Online status and Follower Count. An example of where this is used would the the many different User Modules, like the <a href="https://github.com/casthub/module-twitch-user" target="_blank" rel="noopener noreferrer">Twitch User Module</a>.
+The User Info Stock Element provides a base for presenting labeled information to the User, such as Stream Online status and Follower Count. An example of where this is used would the the many different User Modules, like the <a href="https://github.com/casthub/content/tree/master/module-twitch-user" target="_blank" rel="noopener noreferrer">Twitch User Module</a>.
 
 ### Labels
 
